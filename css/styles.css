@@ -18,11 +18,20 @@ text-transform: inherit;}
 padding-top: 30px;
 }
 
+.navbar-icon{
+display: none;
+}
+
 nav a{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
 }
+
+nav a:hover{
+    color: rgb(255, 247, 0);
+}
+
 
 /* About */
 .container-about{
@@ -30,13 +39,18 @@ nav a{
     padding-top: 7%;
 }
 
-/* .img-logo-2{
+.container-about-me{
+    position: relative;
+    
+}
+
+.img-logo-2{
     position: absolute;
     top: 0;
-    left: 40%;
-    width: 400px;
-    z-index: 1;
-} */
+    left: 10%;
+    max-width: 400px;
+    z-index: 0;
+}
 
 h1{
     padding: 10px 0 30px 0px;
@@ -48,8 +62,25 @@ h1{
 }
 
 .btn-about{
-    padding-top: 30px;
+    margin-top: 30px;
+    padding: 15px 65px;
+    color: white;
+    border-color: #faf203;
+    background-color: red;
+    text-transform: uppercase;
+    font-weight: bold;
 }
+
+.btn-about:hover {
+    color: rgb(28,29,37);
+    border-color: #ffffff;
+    background: linear-gradient(135deg, rgb(255, 0, 0) 2%, rgb(255, 247, 0));
+}
+
+.btn-about:focus {
+    box-shadow: 0 0 0 0.25rem rgb(225 247 0 / 25%);
+}
+
 
 .img-icon{
     width: 35px;
@@ -73,6 +104,15 @@ h1{
 
 .h-modal{
 color: red;
+}
+
+.skills a{
+    color: white;
+    text-decoration: none;
+}
+
+.skills a:hover{
+    color: rgb(255, 247, 0);
 }
 
 /* MAIN */
@@ -120,6 +160,7 @@ color: red;
     padding-bottom: 10px;
 }
 
+
 .h4-main{
     padding-top: 10px;
     padding-bottom: 25px;
@@ -163,6 +204,12 @@ li span{
 .portfolio-a a{
     text-decoration: none;
     font-style: italic;
+    color: rgb(41, 41, 41);
+    font-weight: bold;
+}
+
+.portfolio-a a:hover{
+    color: blue;
 }
 
 
@@ -187,7 +234,7 @@ li span{
 }
 
 .anim{
-    height: 100px;
+    width: 100%;
 }
 
 
@@ -205,17 +252,42 @@ font-weight: bold;
 
 /* Education */
 
+.education-container{
+    background-color: rgb(28,29,37);
+    padding-top: 40px;
+}
+
+.education-p{
+    color: white;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.h2-educ{
+    color: white;
+}
+.h4-educ{
+    padding-top: 25px;
+    padding-bottom: 0;
+    color: white;
+}
+
+p span{
+    color: red;
+    font-weight: bold;
+}
+
 
 /* Contact */
 .contact-container{
-    align-self: center;
-    align-items: center;
+    padding-top: 30px;
 }
 
-.contact-img{
-    align-self: center;
-    align-items: center;
+.contact-img-container{
+    padding-left: 30%;
 }
+
+
 .contact-foto{
     max-width: 200px;
     border-radius: 10%;

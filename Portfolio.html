@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
     <title>Portfolio Pris.DD</title>
 </head>
 
@@ -19,31 +20,32 @@
 
     <!-- HEADER -->
     <header class="container-fluid header-container">
-        <div class="row">
-            <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3">
+        <div class="row row-logo">
+            <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
                 <img class="logo-img" src="./img/logo.png" alt="logo">
             </div>
-            <div class="col-sm-8 col-md-9 col-lg-9 col-xl-9 container-navbar">
-                <nav class="navbar container-fluid">
-                    <a class="nav-link" href="">обо мне</a>
-                    <a class="nav-link" href="">навыки</a>
-                    <a class="nav-link" href="">портфолио</a>
-                    <a class="nav-link" href="">опыт</a>
-                    <a class="nav-link" href="">образование</a>
-                    <a class="nav-link" href="">контакты</a>
+            <div class="col-sm-12 col-md-6 col-lg-9 col-xl-9 container-navbar">
+                <div class="nav-menu-icon-container">
+                    <img class="navbar-icon" id='menu-img' src="./img/iconmonstr-menu-1-48.png" alt="icon-menu">
+                </div>
+                <nav class="navbar container-fluid nav-content" id='myNavBar'>
+                    <a class="nav-link" href="#skills">навыки</a>
+                    <a class="nav-link" href="#portfolio">портфолио</a>
+                    <a class="nav-link" href="#experience">опыт</a>
+                    <a class="nav-link" href="#education">образование</a>
+                    <a class="nav-link" href="#contact">контакты</a>
                 </nav>
             </div>
         </div>
         <div class="row container-about">
             <div class="col-sm-11 col-md-11 col-lg-11 col-xl-11">
                 <div class="container-about-me">
-                    <!-- <img  class='img-logo-2' src="./img/Photos/PicsArt_05-14-06.59.36.png" alt="logo"> -->
-                    <!-- <img  class='img-logo-2' src="./img/Photos/PicsArt_05-14-07.00.17.png" alt="logo"> -->
+                    <!-- <img  class='img-logo-2' src="./img/women-logo-png-1.png" alt="logo"> -->
                     <h1>Пристинская Дарина</h1>
                     <span class="span-about">Junior Front-end Developer</span>
-                    <div class="d-grid gap-2 d-md-block btn-about">
+                    <div class="d-grid gap-2 d-md-block">
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-outline-primary btn-lg" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-about" data-bs-toggle="modal"
                             data-bs-target="#staticBackdrop">
                             Обо мне
                         </button>
@@ -71,9 +73,9 @@
                                         </p>
                                         <h5 class="h-modal">Личные качества:</h5>
                                         <ul>
-                                            <li>Умение работать в условиях многозадачности;</li>
-                                            <li>Выполнение задач в срок;</li>
-                                            <li>Желание учиться и развиваться;</li>
+                                            <li>Умею работать в условиях многозадачности;</li>
+                                            <li>Выполненяю задачи в срок;</li>
+                                            <li>Огромное желание учиться и развиваться;</li>
                                             <li>Креативное мышление;</li>
                                             <li>Отличная самодисциплина;</li>
                                             <li>Ответственность;</li>
@@ -83,8 +85,6 @@
                                         <h5 class="h-modal">Контакты:</h5>
                                         <p>тел. 066-43-38-771</p>
                                         <p>e-mail: pris.daryna@gmail.com</p>
-
-
                                     </div>
                                 </div>
                             </div>
@@ -94,17 +94,17 @@
             </div>
             <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
                 <div class="icon">
-                    <a class="nav-link" href=""> <img class="img-icon" src="./img/github.png" alt="icon"></a>
-                    <a class="nav-link" href=""> <img class="img-icon" src="./img/codepen.png" alt="icon"></a>
-                    <!-- <a class="nav-link" href=""> <img class="img-icon" src="./img/inst.png" alt="icon"></a> -->
+                    <a class="nav-link" href="https://github.com/PrisDD" target="_blank"> <img class="img-icon"
+                            src="./img/github.png" alt="icon" title="GitHub"></a>
+                    <a class="nav-link" href="https://codepen.io/prisdd" target="_blank"> <img class="img-icon"
+                            src="./img/codepen.png" alt="icon" title="CodePen"></a>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <div class="skills">
-                    <span>Портфолио</span>
-                    <img src="" alt="">
+                    <a href="#portfolio">Портфолио</a>
                 </div>
             </div>
         </div>
@@ -118,7 +118,7 @@
                 <img class="img-fluid" src="./img/skill.jpg" alt="skill">
             </div>
             <div class="col-sm-8 col-md-7 col-lg-6 col-xl-6">
-                <div class="main-content">
+                <div class="main-content" id="skills">
                     <div class="skills-text">
                         <h2 class="h-modal h2-main">Навыки</h2>
                         <ul class="skills-ul">
@@ -139,7 +139,7 @@
 
         <!-- Portfolio -->
         <div class="row portfolio-container">
-            <h2 class="h-modal h2-main">Портфолио</h2>
+            <h2 class="h-modal h2-main" id="portfolio">Портфолио</h2>
             <div class="col-sm-3 col-md-4 col-lg-4 col-xl-4 img-padding">
                 <div class="portfolio-blok-container">
                     <img class="img-fluid" src="./img/maket1 (2).png" alt="skill">
@@ -179,57 +179,13 @@
                     </a>
                 </div>
             </div>
-            <div class="row row-codepen">
-                <div class="col-sm-3 col-md-4 col-lg-4 col-xl-4 img-padding">
-                    <div class="portfolio-blok-gif">
-                        <div class="animation-container">
-                            <div>
-                                <img class="anim" src="./img/github.png" alt="gif">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 img-padding portfolio-a">
-                        <a href="https://codepen.io/prisdd/pen/JjWPxaa">
-                            Посмотреть CodePen
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-md-4 col-lg-4 col-xl-4 img-padding">
-                    <div class="portfolio-blok-gif">
-                        <div class="animation-container">
-                            <div>
-                                <img class="anim" src="./img/github.png" alt="gif">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 img-padding portfolio-a">
-                        <a href="https://codepen.io/prisdd/pen/JjWPxaa">
-                            Посмотреть CodePen
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-md-4 col-lg-4 col-xl-4 img-padding">
-                    <div class="portfolio-blok-gif">
-                        <div class="animation-container">
-                            <div>
-                                <img class="anim" src="./img/github.png" alt="gif">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 img-padding portfolio-a">
-                        <a href="https://codepen.io/prisdd/pen/JjWPxaa">
-                            Посмотреть CodePen
-                        </a>
-                    </div>
-                </div>
 
-            </div>
         </div>
 
         <!-- Experience -->
         <div class="row main-blok-container">
             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <div class="experience-text main-content">
+                <div class="experience-text main-content" id="experience">
                     <h2 class="h-modal h2-main">Опыт работы</h2>
                     <h4 class="h4-main">Предыдущее место работы:</h4>
                     <p class="experience-p">с 09.2016 по 08.2020 (3 года 11 месяцев)</p>
@@ -284,22 +240,22 @@
         </div>
 
         <!-- Education -->
-        <div class="row main-blok-container">
+        <div class="row main-blok-container education-container">
+            <h2 class="h-modal h2-main h2-educ" id="education">Образование </h2>
             <div class="col-sm-4 col-md-5 col-lg-5 col-xl-5 img-padding">
                 <img class="img-fluid" src="./img/education.jpg" alt="Education">
             </div>
             <div class="col-sm-8 col-md-7 col-lg-7 col-xl-7">
                 <div class="main-content">
                     <div class="skills-text">
-                        <h2 class="h-modal h2-main">Образование </h2>
-                        <h4>ХНЭУ им. С. Кузнеца</h4>
-                        <span>Финансов, Финансы и кредит, Харьков.
-                            Высшее, с 09.2011 по 06.2016 (4 года 9 месяцев)</span>
-                        <h4>Дополнительное образование</h4>
-                        <span>Prog.kiev.ua (Верстка HTML5 / CSS3); (1 месяц)</span>
-                        <span>CyberBionic Systematics (JavaScript Essential / JavaScript Advanced / Основы Git). (3
-                            месяца)</span>
-
+                        <h4 class="h2-educ">ХНЭУ им. С. Кузнеца</h4>
+                        <p class="education-p">Финансов, Финансы и кредит, Харьков.</p>
+                        <p class="education-p">Высшее, с 09.2011 по 06.2016 (4 года 9 месяцев).</p>
+                        <h4 class="h4-main h4-educ">Дополнительное образование</h4>
+                        <p class="education-p"><b>Prog.kiev.ua</b> <span>(Верстка HTML5 / CSS3)</span> (1 месяц)</p>
+                        <p class="education-p"> <b>CyberBionic Systematics</b> <span>(JavaScript Essential / JS Advanced
+                                / Основы Git)</span> (3
+                            месяца)</p>
                     </div>
                 </div>
             </div>
@@ -307,8 +263,11 @@
 
         <!-- Contact -->
         <div class="row main-blok-container contact-container">
-            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 img-padding contact-img">
-                <img class="contact-foto" src="./img/61987743_432425020915058_154866031888779287_n.jpg" alt="foto">
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <div class="contact-img-container" id="contact">
+                    <img class="img-fluid contact-foto" src="./img/61987743_432425020915058_154866031888779287_n.jpg"
+                        alt="foto">
+                </div>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
                 <div class="main-content">
@@ -323,19 +282,22 @@
             </div>
         </div>
 
+
     </main>
 
     <!-- FOOTER -->
     <footer class="container-fluid footer-container">
         <div class="row footer-content">
             <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                <img class="logo-img" src="./img/logo.png" alt="logo">
+                <div class="container-img">
+                    <img class="logo-img" src="./img/logo.png" alt="logo">
+                </div>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 container-navbar">
                 <nav class="navbar container-fluid">
-                    <a class="nav-link" href="">GitHub</a>
-                    <a class="nav-link" href="">CodePen</a>
-                    <a class="nav-link" href="">Instagram</a>
+                    <a class="nav-link" href="https://github.com/PrisDD" target="_blank">GitHub</a>
+                    <a class="nav-link" href="https://codepen.io/prisdd" target="_blank">CodePen</a>
+                    <a class="nav-link" href="https://www.instagram.com/pris.dd" target="_blank">Instagram</a>
                 </nav>
             </div>
         </div>
@@ -343,6 +305,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+    <script src="styles.js"></script>
 </body>
 
 </html>
