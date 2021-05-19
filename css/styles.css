@@ -1,6 +1,12 @@
 body{
     font-family: 'Comfortaa', 'Anonymous Pro','Didact Gothic', cursive;
-text-transform: inherit;}
+text-transform: inherit;
+}
+
+body img :first-child{
+    width: 10px;
+    position: absolute;  
+}
 
 /* HEADER */
 .header-container, .footer-container{
@@ -8,9 +14,8 @@ text-transform: inherit;}
     color: white;
     padding: 10px 25px 10px;
 }
-
 .logo-img{
-    width: 200px;
+    width: 300px;
 }
 
 /* Navbar */
@@ -39,19 +44,6 @@ nav a:hover{
     padding-top: 7%;
 }
 
-.container-about-me{
-    position: relative;
-    
-}
-
-.img-logo-2{
-    position: absolute;
-    top: 0;
-    left: 10%;
-    max-width: 400px;
-    z-index: 0;
-}
-
 h1{
     padding: 10px 0 30px 0px;
 
@@ -59,6 +51,7 @@ h1{
 
 .span-about{
     font-style: italic;
+    z-index: 100;
 }
 
 .btn-about{
@@ -132,11 +125,13 @@ color: red;
     background-color: rgb(252,252,250);
     box-shadow: 10px 10px 21px 0px rgba(41,41,41,0.45);
     align-items: center;
+
     
 }
 
 .img-padding{
     padding: 0;
+
 }
 
 .main-content{
@@ -301,3 +296,14 @@ p span{
     padding-bottom: 20px;
 }
 
+.contact-a a{
+    text-decoration: none;
+    font-weight: bold;
+    color: green;
+}
+
+.contact-a-modal a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(41, 41, 41);;
+}
