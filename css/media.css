@@ -62,6 +62,10 @@
     display: none;
   }
 
+  .modal-body-container{
+    margin-left: 0px;
+  }
+
 }
 
 /* sm-устройства (больше или равно 576px) */
@@ -75,6 +79,14 @@
     display: block;
 
   }
+
+  .modal-dialog {
+    width: 95%;
+ }
+  .logo-container{
+    display: grid;
+    justify-items: center;
+}
 
   .navbar-icon {
     display: none;
