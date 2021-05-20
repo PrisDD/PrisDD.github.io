@@ -33,12 +33,12 @@ let intervalId = setInterval(function () {
 
       if (element.y + figureHeight >= window.innerHeight) {
          element.y = -figureHeight;
-         element.x = Math.round(window.innerWidth * Math.random());
+         element.x = Math.floor(window.innerWidth * Math.random());
       }
 
-      if (element.x + figureWidth == window.innerWidth) {
-         element.x = figureWidth;
-         // element.y = Math.round(window.innerHeight * Math.random());
+      if (element.x + figureWidth >= window.innerWidth - 30) {
+         element.x = -figureWidth;
+         element.y = Math.floor(window.innerHeight * Math.random());
       }
 
       element.elem.style.top = element.y + 'px';
@@ -54,14 +54,14 @@ document.onmousemove = function (e) {
 
    if (e.clientX < lineCenter) {
       direction = lineCenter / e.clientX * -1;
-      if(direction < -3){
+      if (direction < -3) {
          direction = -3;
       }
-   }else {
+   } else {
       //реверсия координат курсора
-      let clientXRevers = lineCenter-( e.clientX % lineCenter);
+      let clientXRevers = lineCenter - (e.clientX % lineCenter);
       direction = lineCenter / clientXRevers;
-      if(direction > 3) {
+      if (direction > 3) {
          direction = 3;
       }
    }

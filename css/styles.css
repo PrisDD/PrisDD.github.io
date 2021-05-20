@@ -62,16 +62,20 @@ h1{
     background-color: red;
     text-transform: uppercase;
     font-weight: bold;
+    
 }
 
 .btn-about:hover {
     color: rgb(28,29,37);
     border-color: #ffffff;
     background: linear-gradient(135deg, rgb(255, 0, 0) 2%, rgb(255, 247, 0));
+    
+
 }
 
 .btn-about:focus {
     box-shadow: 0 0 0 0.25rem rgb(225 247 0 / 25%);
+    
 }
 
 
@@ -95,8 +99,18 @@ h1{
     margin-left: 55px;
 }
 
+.ul-modal{
+    list-style-type: circle;
+
+}
+
 .h-modal{
 color: red;
+}
+.contact-a-modal a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(41, 41, 41);;
 }
 
 .skills a{
@@ -279,13 +293,20 @@ p span{
 }
 
 .contact-img-container{
-    padding-left: 30%;
+    display: grid;
+    justify-items: center;
 }
 
 
 .contact-foto{
     max-width: 200px;
     border-radius: 10%;
+}
+
+.contact-a a{
+    text-decoration: none;
+    font-weight: bold;
+    color: green;
 }
 
 /* FOOTER */
@@ -296,14 +317,23 @@ p span{
     padding-bottom: 20px;
 }
 
-.contact-a a{
-    text-decoration: none;
-    font-weight: bold;
-    color: green;
+.footer-a{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
-.contact-a-modal a{
+.footer-a a{
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    color: rgb(41, 41, 41);;
+    text-transform: uppercase;
+}
+
+.footer-a a:hover{
+    color: rgb(255, 247, 0);
+}
+
+.footer-logo-img{
+    max-width: 150px;
 }

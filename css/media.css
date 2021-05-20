@@ -32,7 +32,7 @@
     display: none;
   }
 
-  .show {
+  .show-menu {
     display: inline-block;
     position: absolute;
     max-width: 250px;
@@ -42,11 +42,11 @@
     z-index: 100;
   }
 
-  .show a{
+  .show-menu a{
     color: rgb(41, 41, 41);
   }
 
-  .show a:hover{
+  .show-menu a:hover{
     color: red;
   }
 }
@@ -55,6 +55,10 @@
 @media (max-width: 768px) {
   /* CSS для: 768px <= ширины <= 991px */
   .logo-img{
+    display: none;
+  }
+
+  .img-digital{
     display: none;
   }
 
@@ -89,7 +93,7 @@
     color: red;
   }
 
-  .show {
+  .show-menu {
     display: none;
   }
 

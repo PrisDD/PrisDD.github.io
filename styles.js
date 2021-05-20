@@ -12,11 +12,11 @@ function menuInit() {
 
 function handler(e) {
    if (!e.target.matches('.nav-menu-icon-container')) {
-      let navBar = document.getElementById('myNavBar').classList.toggle("show");
+      let navBar = document.getElementById('myNavBar').classList.toggle("show-menu");
       for (let i = 0; i < navBar.length; i++) {
          let openDropdown = navBar[i];
-         if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
+         if (openDropdown.classList.contains('show-menu')) {
+            openDropdown.classList.remove('show-menu');
          }
       }
    }
