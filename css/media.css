@@ -67,8 +67,13 @@
 /* sm-устройства (больше или равно 576px) */
 @media (max-width: 576px) {
   /* CSS для: 576px <= ширины <= 767px */
+  .header-container, .footer-container{
+    padding: 10px 0px 10px;
+}
+
   .logo-img{
     display: block;
+
   }
 
   .navbar-icon {
@@ -96,6 +101,38 @@
   .show-menu {
     display: none;
   }
+
+  .container-about {
+    padding-left: 10px;
+}
+
+
+.btn-about{
+  margin-top: 20px;
+  width: 220px;
+  padding: 10px 10px;
+}
+
+.main-container{
+    padding: 10px 0px 10px;
+}
+
+  .main-blok-container{
+    max-width: 100%;
+    box-shadow: none;
+
+    
+}
+
+.experience-text{
+  padding-left: 0px;
+}
+
+  .footer-a{
+    display: grid;
+    grid-template-columns: none;
+    /* grid-template-rows: repeat(3, 1fr); */
+}
 
 }
 
